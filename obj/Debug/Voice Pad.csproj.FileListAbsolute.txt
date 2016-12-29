@@ -1,0 +1,9 @@
+c:\users\msi\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\Voice Pad.csprojResolveAssemblyReference.cache
+c:\users\msi\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\Voice_Pad.Form1.resources
+c:\users\msi\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\Voice_Pad.Properties.Resources.resources
+c:\users\msi\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\Voice Pad.csproj.GenerateResource.Cache
+C:\Users\MSI\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\Voice_Pad.AboutBox1.resources
+C:\Users\MSI\documents\visual studio 2015\Projects\Voice Pad\bin\Debug\VoicePad.exe
+C:\Users\MSI\documents\visual studio 2015\Projects\Voice Pad\bin\Debug\VoicePad.pdb
+C:\Users\MSI\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\VoicePad.exe
+C:\Users\MSI\documents\visual studio 2015\Projects\Voice Pad\obj\Debug\VoicePad.pdb
