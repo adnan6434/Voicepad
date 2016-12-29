@@ -41,14 +41,14 @@ namespace Voice_Pad
             ///
          
             Choices command = new Choices();
-            command.Add(new string[] { "read", "pause", "resume", "stop", "paste", "clear" }); // voice commands 
+            command.Add(new string[] { "read", "pause", "resume", "stop", "paste", "clear","undo" }); // voice commands 
             GrammarBuilder gb = new GrammarBuilder();//building grammar,more like a container for commands
             gb.Append(command);//putting the commands in the container,this can be called a key to the voice command door
             Grammar g = new Grammar(gb);//putting the key in the keyhole,setup all done
             SRE.LoadGrammarAsync(g);//openning the door
             SRE.SetInputToDefaultAudioDevice();
             SRE.SpeechRecognized += SRE_SpeechRecognized;// recognization event
-            SRE.RecognizeAsync(RecognizeMode.Multiple);//for continuous event recognization
+            SRE.RecognizeAsync(RecognizeMode.Multiple);
             //Didn't needed these here ,works fine without these
 
             // Volshow.Update();
@@ -83,6 +83,10 @@ namespace Voice_Pad
             else if (e.Result.Text == "clear")
             {
                 Clear.PerformClick();
+            }
+            else if (e.Result.Text == "undo")
+            {
+                UndoAction(sender,e);
             }
 
             //  throw new NotImplementedException();
@@ -690,6 +694,9 @@ namespace Voice_Pad
             notifyIcon1.ShowBalloonTip(500);
         }
 
-       
+        private void voiceCommandsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("read-For reading the contents of Textbox.\npause- For pausing the reading.\nresume- For resuming.\npaste-For pasteing the clipboard contents.\nclear- For clearing the textbox.\nundo-For undoing the last action. ", "Voice Commands ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
