@@ -48,7 +48,7 @@ namespace Voice_Pad
             SRE.LoadGrammarAsync(g);//openning the door
             SRE.SetInputToDefaultAudioDevice();
             SRE.SpeechRecognized += SRE_SpeechRecognized;// recognization event
-            SRE.RecognizeAsync(RecognizeMode.Multiple);
+            SRE.RecognizeAsync(RecognizeMode.Multiple);//for continuous event recognization
             //Didn't needed these here ,works fine without these
 
             // Volshow.Update();
