@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("VoicePad")]
-[assembly: AssemblyDescription("This software is made by     Adnan Taufique   This is  my software development project for 3rd year 2nd semester . This a Text to speech Desktop Application . As it is a FOSS(Free and open-source software), All distribution of the software is under FOSS License  . Enjoy.")]
+[assembly: AssemblyDescription("This software is made by     Adnan Taufique  .This is  my software development project for 3rd year 2nd semester . This a Text to speech Desktop Application . As it is a FOSS(Free and open-source software), All distribution of the software is under FOSS License  . Enjoy.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Seasonal DEVS LTD.")]
 [assembly: AssemblyProduct("VoicePad")]
